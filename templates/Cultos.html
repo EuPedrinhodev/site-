@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Reformados Church | Uma familia para pertencer </title>
+  <link rel="icon" href="static/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<style>
+body {
+
+  background-size: cover;
+  background-position: center ;
+  background-attachment: fixed;
+}
+
+.color {
+  filter: brightness(1) invert(2);
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+.color:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-black bg-black static-top w-100">
+    <div class="container justify-content-between">
+      <a class="navbar-brand" href="/">
+        <img src="/static/logo.jpg" alt="..." height="100" class="color bg-black static-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">          
+          </li>
+          <li>
+             <!-- Link para a página "saiba_mais.html" com um ícone -->
+    <a href="https://linktr.ee/reformadosccr?fbclid=IwAR2hww1OaH9Q23v7dK_xwRte9msXecvSBiHz4XxWUEwTZdGIATJc_gR4NCw" target="_blank">
+          <button class="custom-button">Saiba Mais</button>
+          <style>  
+        
+            
+            .custom-button {
+                background-color: #ff1e00;
+                color: black;
+                border: none;
+                padding: 5px 15px;
+                border-radius: 10px;
+                font-size: 10px;
+                cursor: pointer;
+            }
+        
+            .custom-button:hover {
+                background-color: #0056b3;
+            }
+        </style>
+        
+        
+  </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/grupos_reformados">Grupos Reformados</a>
+            <a class="nav-link" href="/"></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              A Igreja
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="/igreja/sobre">Sobre</a></li>
+              <li><a class="dropdown-item" href="/igreja/sobre/equipe_pastoral">Equipe Pastoral</a></li>
+              <li><a class="dropdown-item" href="/igreja/sobre/Ministerios">Ministerios</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="/igreja/sobre/Dizimos_&_Ofertas">Dízimos & Ofertas</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <meta charset="UTF-8">
+    <title>Cultos</title>
+    <link rel="icon" href="static/logo.ico" type="image/x-icon">
+    <style>
+      
+      
+    body
+       
+      
+
+      
+      #meu-elemento {
+        width: 30%;
+        height: 10%;
+      }
+      
+
+      .color {
+        filter: brightness(1) invert(2);
+        border-radius: 50%;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        transition: all 0.3s ease-in-out;
+      }
+
+      .color:hover {
+        transform: scale(1.1);
+      }
+      
+      .culto {
+        background-color: #f5f5f52b;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .culto-day {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .day-name {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .event-button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+
+      .culto-details {
+    margin-top: 30px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+      }
+
+      .culto-details.show {
+        display: flex;
+        align-items: center;
+      }
+
+      .culto-time {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+      }
+
+  .culto-time i {
+    margin-right: 10px;
+  }
+
+      .culto-location ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .culto-location ul li {
+        margin-bottom: 10px;
+      }
+    </style>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+  </head>
+  
+  <body>
+    <div class="container">
+      <h1>Reformados Church Barueri</h1>
+      <div class="culto-location">
+        <p><i class="material-icons icon"></i>Av. Brigadeiro MR Jordão, 1052 - Jd Silveira, Barueri, SP, Brasil.</p>
+        <ul>
+          <li><i class="material-icons icon">directions_car</i> <a href="https://www.google.com/maps/search/Av.+Brigadeiro+MR+Jordão,+1052+-+Jd+Silveira,+Barueri,+SP,+Brasil" target="_blank">Google Maps</a></li>
+          <li><i class="material-icons icon">directions_car</i> <a href="https://waze.com/ul?ll=-23.5223,-46.9191&navigate=yes" target="_blank">Waze</a></li>
+        </ul>
+      </div>
+    
+      <div class="culto">
+        <div class="culto-day">
+          <div class="day-name">Domingo</div>
+          <button class="event-button" onclick="showProgramacao('domingo')">Programação</button>
+        </div>
+        
+        <div class="culto-details" id="domingo" style="display:none;">
+          <div class="culto-time">
+            <i class="material-icons icon">access_time</i>
+            <span>9:30h -  </span>
+            <span> 19h </span>
+          </div>
+          
+          <div class="culto-description">
+            <p>Culto da familia.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="culto">
+        <div class="culto-day">
+          <div class="day-name">Segunda-feira</div>
+          <button class="event-button" onclick="showProgramacao('segunda')">Programação</button>
+        </div>
+        
+        <div class="culto-details" id="segunda" style="display:none;">
+          <div class="culto-time">
+            <i class="material-icons icon">access_time</i>
+            <span>20h</span>
+          </div>
+          
+          <div class="culto-description">
+            <p>Prosperity | | Reformadas em Ação || Desbravadores || Pedra Viva 
+              *programação flutuante, consultar agenda semanal.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="culto">
+        <div class="culto-day">
+          <div class="day-name">Terça-feira</div>
+          <button class="event-button" onclick="showProgramacao('terca')">Programação</button>
+        </div>
+        
+        <div class="culto-details" id="terca" style="display:none;">
+          <div class="culto-time">
+            <i class="material-icons icon">access_time</i>
+            <span>20h</span>
+          </div>
+          
+          <div class="culto-description">
+            <p>Grs- grupos Reformados nas casas.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="culto">
+        <div class="culto-day">
+          <div class="day-name">Quarta-feira</div>
+          <button class="event-button" onclick="showProgramacao('quarta')">Programação</button>
+        </div>
+        
+        <div class="culto-details" id="quarta" style="display:none;">
+          <div class="culto-time">
+            <i class="material-icons icon">access_time</i>
+            <span></span>
+          </div>
+          
+          <div class="culto-description">
+            <p>* consultar agenda semanal .</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="culto">
+        <div class="culto-day">
+          <div class="day-name">Quinta-feira</div>
+          <button class="event-button" onclick="showProgramacao('quinta')">Programação</button>
+        </div>
+        
+        <div class="culto-details" id="quinta" style="display:none;">
+          <div class="culto-time">
+            <i class="material-icons icon">access_time</i>
+            <span>20h</span>
+          </div>
+          
+          <div class="culto-description">
+            <p>Escola E.F.M</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="culto">
+        <div class="culto-day">
+          <div class="day-name">Sexta-feira</div>
+          <button class="event-button" onclick="showProgramacao('sexta')">Programação</button>
+        </div>
+        
+        <div class="culto-details" id="sexta" style="display:none;">
+          <div class="culto-time">
+            <i class="material-icons icon">access_time</i>
+            <span></span>
+          </div>
+          
+          <div class="culto-description">
+            <p>* consultar a agenda semanal .</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="culto">
+        <div class="culto-day">
+          <div class="day-name">Sábado</div>
+          <button class="event-button" onclick="showProgramacao('sabado')">Programação</button>
+        </div>
+        
+        <div class="culto-details" id="sabado" style="display:none;">
+          <div class="culto-time">
+            <i class="material-icons icon">access_time</i>
+            <span>17h - Grs jovens</span>
+            
+          </div>
+          
+          <div class="culto-description">
+            <div class="culto-time"></div>
+            <p>20h - Ekballo</p>
+          </div>
+        </div>
+      </div>
+      
+  
+      
+      <div class="container">
+        <h1>Reformados Church Jandira</h1>
+        <div class="culto-location">
+          <p><i class="material-icons icon"></i>R. Perequê, 117 - Vila São NicolauJandira - SP, 06620-010 , SP, Brasil.</p>
+            <li><i class="material-icons icon">directions_car</i> <a href="https://www.google.com/maps/search/R.Perequê+117+Vila+São+NicolauJandira" target="_blank">Google Maps</a></li>
+            <li><i class="material-icons icon">directions_car</i> <a href="https://waze.com/ul?ll= -23.5435587.9191&navigate=yes" target="_blank">Waze</a></li>
+          </ul>
+        </div>
+      
+        <div class="culto">
+          <div class="culto-day">
+            <div class="day-name">Domingo</div>
+            <button class="event-button" onclick="showProgramacao('programação')">Programação</button>
+          </div>
+          
+          <div class="culto-details" id="programação" style="display:none;">
+            <div class="culto-time">
+              <i class="material-icons icon">access_time</i>
+              <span>19h</span>
+              <span></span>
+            </div>
+            
+            <div class="culto-description">
+              <p>Culto da familia.</p>
+            </div>
+          </div>
+        </div>
+      
+  <div class="container">
+        <h1>Gr Carapicuíba</h1>
+        <div class="culto-location">
+          <p><i class="material-icons icon"></i>R. Dom José, 34 - Vila HelemarCarapicuíba - SP, 06397-650.</p>
+          </div>
+          <div class="culto">
+            <div class="culto-day">
+              <div class="day-name">Terça</div>
+              <button class="event-button" onclick="showProgramacao('Terça')">Programação</button>
+            </div>
+            
+            <div class="culto-details" id="Terça" style="display:none;">
+              <div class="culto-time">
+                <i class="material-icons icon">access_time</i>
+                <span>20h</span>
+                <span></span>
+              </div>
+              <div class="culto-description">
+                <p>GR no Lar.</p>
+              </div>
+            </div>
+          </div>
+
+      <script>
+        function showProgramacao(day) {
+          var programacao = document.getElementById(day);
+          if (programacao.style.display === "none") {
+            programacao.style.display = "block";
+          } else {
+            programacao.style.display = "none";
+          }
+        }
+      </script>
+    <!-- Bootstrap core JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<div class="sobre-igreja">
+    </div>
+    
+    
+ 
+
+
+      
+
+    

@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Reformados Church | Uma familia para pertencer </title>
+  <link rel="icon" href="static/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<style>
+body {
+  background-image: url('static/igreja.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.color {
+  filter: brightness(1) invert(2);
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+.color:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-black bg-black static-top">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        <img src="/static/logo.jpg" alt="..." height="100" class="color bg-black static-top navbar-logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/Cultos">Cultos</a>
+            
+          </li>
+          <li>
+             <!-- Link para a página "saiba_mais.html" com um ícone -->
+    <a href="https://linktr.ee/reformadosccr?fbclid=IwAR2hww1OaH9Q23v7dK_xwRte9msXecvSBiHz4XxWUEwTZdGIATJc_gR4NCw" target="_blank">
+          <button class="custom-button">Saiba Mais</button>
+          <style>  
+            
+            .custom-button {
+                background-color: #ff1e00;
+                color: black;
+                border: none;
+                padding: 5px 15px;
+                border-radius: 10px;
+                font-size: 10px;
+                cursor: pointer;
+            }
+        
+            .custom-button:hover {
+                background-color: #0056b3;
+            }
+        </style>
+        
+        
+  </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/grupos_reformados">Grupos Reformados</a>
+            <a class="nav-link" href=""></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              A Igreja
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="/igreja/sobre">Sobre</a></li>
+              <li><a class="dropdown-item" href="/igreja/sobre/equipe_pastoral">Equipe Pastoral</a></li>            
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="/igreja/sobre/Dizimos_&_Ofertas">Dízimos & Ofertas</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="/static/facilitaores.jpg" alt="Recepção" id="imagem-recepcao1">
+      </div>
+      <div class="col-md-6">
+        <div class="jumbotron">
+          <h1 class="display-4">Recepção</h1>
+          <p class="lead">Nosso cartão de visita, receber com carinho e orientar as pessoas sobre os locais na Igreja.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    const imagemRecepcao1 = document.querySelector('#imagem-recepcao1');
+    imagemRecepcao1.addEventListener('click', () => {
+      alert('Cliquei na imagem!');
+    });
+  </script>
+  <style>
+    .imagem-grande {
+      width: 600px;
+      height: 400px;
+    }
+  </style>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="/static/evangelismo.jpg" alt="Recepção" id="imagem-recepcao2">
+    </div>
+    <div class="col-md-6">
+      <div class="jumbotron">
+        <h1 class="display-4">Evangelismo</h1>
+        <p class="lead">Venha servir em Ações de levar o amor de Jesus para as pessoal de maneira prática.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const imagemRecepcao2 = document.querySelector('#imagem-recepcao2');
+  imagemRecepcao.addEventListener('click', () => {
+    alert('Cliquei na imagem!');
+  });
+</script>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="/static/fire.jpg" alt="Recepção" id="imagem-recepcao3">
+    </div>
+    <div class="col-md-6">
+      <div class="jumbotron">
+        <h1 class="display-4">Fire</h1>
+        <p class="lead">Venha servir na implantação de igrejas.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const imagemRecepcao3 = document.querySelector('#imagem-recepcao3');
+  imagemRecepcao.addEventListener('click', () => {
+    alert('Cliquei na imagem!');
+  });
+</script>
+       
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="/static/midia.jpg" alt="Recepção" id="imagem-recepcao4">
+    </div>
+    <div class="col-md-6">
+      <div class="jumbotron">
+        <h1 class="display-4">Multimídia</h1>
+        <p class="lead">Venha servir no som, imagem e luz.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const imagemRecepcao4 = document.querySelector('#imagem-recepcao4');
+  imagemRecepcao.addEventListener('click', () => {
+    alert('Cliquei na imagem!');
+  });
+</script>
+        
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="/static/midiass.jpg" alt="Recepção" id="imagem-recepcao5">
+    </div>
+    <div class="col-md-6">
+      <div class="jumbotron">
+        <h1 class="display-4">Social média</h1>
+        <p class="lead">Venha servir nos storys, reels,  banner e texto nas redes sociais.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const imagemRecepcao5 = document.querySelector('#imagem-recepcao5');
+  imagemRecepcao.addEventListener('click', () => {
+    alert('Cliquei na imagem!');
+  });
+</script>
+      
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="/static/fundo.jpg" alt="Recepção" id="imagem-recepcao6">
+    </div>
+    <div class="col-md-6">
+      <div class="jumbotron">
+        <h1 class="display-4">Primeira vez</h1>
+        <p class="lead">Venha receber nossos visitantes de primeira vez com muito carinho   entregando uma atenção especial  repleta da nossa cultura familia.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const timagemRecepcao6 = document.querySelector('#imagem-recepcao6');
+  imagemRecepcao.addEventListener('click', () => {
+    alert('Cliquei na imagem!');
+  });
+</script>
+       
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="/static/pedra.jpg" alt="Recepção" id="imagem-recepcao7">
+    </div>
+    <div class="col-md-6">
+      <div class="jumbotron">
+        <h1 class="display-4">Pedra Viva</h1>
+        <p class="lead">Celebrações temáticas de cuidado com nossas famílias.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const imagemRecepcao7 = document.querySelector('#imagem-recepcao7');
+  imagemRecepcao.addEventListener('click', () => {
+    alert('Cliquei na imagem!');
+  });
+</script>
+      
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="/static/h.jpg" alt="Recepção" id="imagem-recepcao8">
+    </div>
+    <div class="col-md-6">
+      <div class="jumbotron">
+        <h1 class="display-4">Desbravadores</h1>
+        <p class="lead">Celebrações direta ao coração do homem.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const Kids= document.querySelector('#imagem-kids8');
+  imagemRecepcao.addEventListener('click', () => {
+    alert('Cliquei na imagem!');
+  });
+</script>     
+       
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="/static/k.jpg" alt="Kids" id="imagem-kids9">
+    </div>
+    <div class="col-md-6">
+      <div class="jumbotron">
+        <h1 class="display-4">Kids</h1>
+        <p class="lead">Venha servir nossas crianças de 0 a 12 anos.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const imagemRecepcao9 = document.querySelector('#imagem-recepcao9');
+  imagemRecepcao.addEventListener('click', () => {
+    alert('Cliquei na imagem!');
+  });
+</script>     
+        
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="/static/ekballo.jpg" alt="Recepção" id="imagem-recepcao10">
+    </div>
+    <div class="col-md-6">
+      <div class="jumbotron">
+        <h1 class="display-4">Ekballo</h1>
+        <p class="lead">Celebrações voltadas para nossos jovens de 13 a 39 anos.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const imagemRecepcao11 = document.querySelector('#imagem-recepcao11');
+  imagemRecepcao.addEventListener('click', () => {
+    alert('Cliquei na imagem!');
+  });
+</script>     
+          
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="/static/prosperit.jpg" alt="Recepção" id="imagem-recepcao10">
+      </div>
+      <div class="col-md-6">
+        <div class="jumbotron">
+          <h1 class="display-4">Prosperity</h1>
+          <p class="lead">Celebrações temáticas para encoajar empreendedores  e empresários. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    const imagemRecepcao12 = document.querySelector('#imagem-recepcao12');
+    imagemRecepcao.addEventListener('click', () => {
+      alert('Cliquei na imagem!');
+    });
+  </script>     
+           
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="/static/eventos.jpg" alt="Recepção" id="imagem-recepcao10">
+        </div>
+        <div class="col-md-6">
+          <div class="jumbotron">
+            <h1 class="display-4">Eventos</h1>
+            <p class="lead">Servir nossas Celebrações com amor.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      const imagemRecepcao13 = document.querySelector('#imagem-recepcao13');
+      imagemRecepcao.addEventListener('click', () => {
+        alert('Cliquei na imagem!');
+      });
+    </script>     
+           
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="/static/mulheres.jpg" alt="Recepção" id="imagem-recepcao10">
+          </div>
+          <div class="col-md-6">
+            <div class="jumbotron">
+              <h1 class="display-4">Reformadas em Ação</h1>
+              <p class="lead">Venha servir, orientar, amar e amparar nossas mulheres em ambientes de paixão e cuidado.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <script>
+        const imagemRecepcao10 = document.querySelector('#imagem-recepcao10');
+        imagemRecepcao.addEventListener('click', () => {
+          alert('Cliquei na imagem!');
+        });
+
+
+        
+      </script>     
+      </script>     
+           
+    </div>
+  </li>
+</ul>
+</div>
+<div class="container">
+<div class="row">
+  <div class="col-md-6">
+    <img src="/static/dança.jpg" alt="Recepção" id="imagem-recepcao10">
+  </div>
+  <div class="col-md-6">
+    <div class="jumbotron">
+      <h1 class="display-4">Dança</h1>
+      <p class="lead">Venha servir, com agente.</p>
+    </div>
+  </div>
+</div>
+</div>
+</script>     
+           
+</div>
+</li>
+</ul>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-md-6">
+<img src="/static/intercessao.jpg" alt="Recepção" id="imagem-recepcao10">
+</div>
+<div class="col-md-6">
+<div class="jumbotron">
+  <h1 class="display-4">Intercessão</h1>
+  <p class="lead">Venha servir, na Intercessão se colocando na brecha pelas vidas.</p>
+</div>
+</div>
+</div>
+</div>
+
+<script>
+const imagemRecepcao15 = document.querySelector('#imagem-recepcao15');
+imagemRecepcao.addEventListener('click', () => {
+alert('Cliquei na imagem!');
+});
+
+
+
+</script>     
+<script>
+const imagemRecepcao14 = document.querySelector('#imagem-recepcao14');
+imagemRecepcao.addEventListener('click', () => {
+  alert('Cliquei na imagem!');
+});
+
+
+
+</script>     
+              
+           
+              </div>
+            </li>
+          </ul>
+        </div>
+        
+</body>
+<style>
+  .minha-div {
+  margin-left: 770px;
+}
+
+  #imagem-recepcao6 {
+    max-width: 50%;
+  }
+</style>
+
+<style>
+  body {
+    background-color: #5900be;
+    color: #ffffff;
+    font-family: sans-serif;
+  }
+
+  img:not(.navbar-logo) {
+    max-width: 50%;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  h1 {
+    margin-top: 0;
+    font-size: 36px;
+    text-align: center;
+  }
+
+  p.abnt {
+    font-size: 24px;
+    text-align: left; /* Alinhamento à esquerda */
+    line-height: 1.5; /* Espaçamento entre linhas recomendado pela ABNT */
+    margin-bottom: 1em; /* Espaçamento entre parágrafos */
+  }
+
+  .qrcode {
+    display: block;
+    margin: 40px auto;
+    max-width: 300px;
+  }
+
+  .pix {
+    display: block;
+    margin: 40px auto;
+    max-width: 300px;
+  }
+
+  .image-and-text {
+    display: flex;
+    align-items: center;
+  }
+
+  .image-align-left {
+    margin-right: 20px;
+    max-width: 200px;
+  }
+
+  .color {
+  filter: brightness(1) invert(2);
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+</style>
+<!-- Bootstrap core JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<div class="sobre-igreja">
+</html>
